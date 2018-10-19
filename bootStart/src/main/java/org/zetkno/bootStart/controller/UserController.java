@@ -22,16 +22,16 @@ public class UserController {
     }
 
 //新增
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value="/", method=RequestMethod.POST)
     public String postUser(@ModelAttribute User user) {
-        //处理"/users/"的post请求，用来创建User
-        //除了@ModelAttribute绑定参数之外，还可以通过@RequestParam从页面中传递参数
+        // 处理"/users/"的POST请求，用来创建User
+        // 除了@ModelAttribute绑定参数之外，还可以通过@RequestParam从页面中传递参数
         users.put(user.getId(), user);
         return "success";
     }
 
     //
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable Long id) {
         //处理"/users/{id}"的GET请求，用来获取url中id值得User信息
         //url中的id可通过@PathVariable绑定到函数的参数中
@@ -49,13 +49,12 @@ public class UserController {
         return "success";
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteUser(@PathVariable Long id) {
-        //处理"/users/{id}"的DELETE请求，用来删除User
+        // 处理"/users/{id}"的DELETE请求，用来删除User
         users.remove(id);
         return "success";
     }
-
 
 
 }

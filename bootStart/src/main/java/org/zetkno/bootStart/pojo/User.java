@@ -1,5 +1,7 @@
 package org.zetkno.bootStart.pojo;
 
+import org.springframework.context.annotation.Bean;
+
 public class User {
 
     private Long id;
