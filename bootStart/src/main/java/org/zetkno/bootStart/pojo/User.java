@@ -1,33 +1,44 @@
 package org.zetkno.bootStart.pojo;
 
-
+//@Alias("user")
 public class User {
 
-    private Long id;
-    private String name;
-    private Integer age;
+    private int id;
+    private String user_name;
+    private String user_password;
 
-    public Long getId() {
+    public User(int id, String user_name, String user_password) {
+        this.id = id;
+        this.user_name = user_name;
+        this.user_password = user_password;
+    }
+
+    public User(String user_name, String user_password) {
+        this.user_name = user_name;
+        this.user_password = user_password;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getUser_password() {
+        return user_password;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
     }
 }

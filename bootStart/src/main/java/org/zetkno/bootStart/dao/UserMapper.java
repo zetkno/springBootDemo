@@ -1,17 +1,18 @@
 package org.zetkno.bootStart.dao;
 
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 import org.zetkno.bootStart.pojo.User;
+import java.util.List;
 
 @Mapper
 public interface UserMapper {
+    User findUserByUsername(String username);
 
-    @Select("SELECT * FROM USER WHERE NAME = #{name}")
-    User findByName(@Param("name") String name);
+    void updateUserByUsername(User user);
 
-    @Insert("INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})")
-    int insert(@Param("name") String name, @Param("age") Integer age);
+    void deleteUserByUsername(String username);
+
+    void saveUser(User user);
+
+    List<User> getUserList();
 }

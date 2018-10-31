@@ -65,6 +65,7 @@
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.1</version>
 		</dependency>
 		<!--mySql jdbc驱动-->
 		<dependency>
@@ -78,7 +79,11 @@
 			<artifactId>druid</artifactId>
 			<version>1.1.9</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.8.2</version>
+		</dependency>
 
 
 	</dependencies>
