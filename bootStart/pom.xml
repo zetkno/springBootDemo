@@ -22,6 +22,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+
+		<!--Userd  by Mybatis Generator to Create Codes-->
+		<!--运行命令： mvn mybatis-generator:generate -e -->
+		<!--<classPathEntry.mysql.location></classPathEntry.mysql.location>-->
 	</properties>
 
 	<!--核心模块，包括自动配置支持、日志和-->
