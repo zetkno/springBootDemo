@@ -16,9 +16,9 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 BEGIN;
-INSERT INTO `user` VALUES (1, 'dalaoyang', '13');
-INSERT INTO `user` VALUES (2, 'xiaoli', '123');
-INSERT INTO `user` VALUES (3, 'xiaoxiongmao', '123');
+INSERT INTO `user` VALUES (1, 'xiaojingjing', '13');
+INSERT INTO `user` VALUES (2, 'xiaoming', '123');
+INSERT INTO `user` VALUES (3, 'xiaocaijing', '123');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
